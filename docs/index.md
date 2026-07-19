@@ -14,7 +14,7 @@ hero:
       link: /rag
     - theme: alt
       text: GitHub
-      link: https://github.com/your-name/ai-terms-fun
+      link: https://github.com/slowleelab/ai-terms-fun
 
 features:
   - icon: 😏

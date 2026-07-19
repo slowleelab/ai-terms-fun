@@ -22,7 +22,7 @@ export default defineConfig({
       { text: '热点', link: '/rag' },
       {
         text: 'GitHub',
-        link: 'https://github.com/your-name/ai-terms-fun',
+        link: 'https://github.com/slowleelab/ai-terms-fun',
       },
     ],
 
@@ -55,7 +55,7 @@ export default defineConfig({
     ],
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/your-name/ai-terms-fun' },
+      { icon: 'github', link: 'https://github.com/slowleelab/ai-terms-fun' },
     ],
 
     outline: {

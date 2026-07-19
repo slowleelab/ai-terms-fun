@@ -33,7 +33,7 @@
 | 📚 经典 | 注意力机制 · Embedding · 过拟合 |
 | 🧪 工程 | 微调 · RLHF · 量化 |
 
-完整目录见 [docs 站点](https://example.com)（建设中）。
+完整目录见 [docs 站点](https://slowleelab.github.io/ai-terms-fun/)（部署中）。
 
 ## 为什么开源？
 
