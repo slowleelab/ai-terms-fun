@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**9 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**10 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -23,7 +23,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [编码器-解码器 Encoder-Decoder](./encoder-decoder) -- 三种架构的分工
 - ✅ [BERT（仅编码器）](./bert) -- 理解型任务的代表
 - ✅ [GPT / LLaMA（仅解码器）](./gpt) -- 生成型任务的代表
-- ⬜ 传统模型：CNN / RNN / LSTM -- Transformer 之前的世界
+- ✅ [传统模型：CNN / RNN / LSTM](./cnn-rnn-lstm) -- Transformer 之前的世界
 - ⬜ 模型组件：参数 / 层 / 激活函数 -- ReLU、GeLU 为什么长那样
 
 ### 训练范式
