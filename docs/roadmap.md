@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**19 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**21 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -41,9 +41,9 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 ## ⚡ 推理与生成
 
-- ⬜ 自回归生成 Autoregressive -- 一个 token 一个 token 往外蹦
+- ✅ [自回归生成 Autoregressive](./autoregressive) -- 一个 token 一个 token 往外蹦
 - ⬜ 解码策略
-  - ⬜ 贪婪解码
+  - ✅ [贪婪解码](./greedy-decoding)
   - ⬜ 束搜索 Beam Search
   - ⬜ Top-k 采样
   - ⬜ Top-p 采样

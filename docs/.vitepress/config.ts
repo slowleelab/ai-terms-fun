@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
+    /^\.?\/(beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
     /^\.?\/(tokenizer|token|chunking|high-dim-vector|dense-sparse-vector|clip|context-window)$/,
     /^\.?\/(inverted-index|tf-idf|bm25|knn-ann|ann-algorithms|ann-libraries|vector-database)$/,
@@ -93,12 +93,12 @@ export default defineConfig({
         text: '⚡ 推理与生成',
         collapsed: false,
         items: [
-          { text: '自回归生成', link: '/roadmap' },
+          { text: '✅ 自回归生成', link: '/autoregressive' },
           {
             text: '解码策略',
             collapsed: true,
             items: [
-              { text: '贪婪解码', link: '/roadmap' },
+              { text: '✅ 贪婪解码', link: '/greedy-decoding' },
               { text: '束搜索 Beam Search', link: '/roadmap' },
               { text: 'Top-k 采样', link: '/roadmap' },
               { text: 'Top-p 采样', link: '/roadmap' },
