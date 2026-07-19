@@ -1,11 +1,24 @@
 import { defineConfig } from 'vitepress'
 
+// GitHub Pages 项目站点需要 base = '/<repo>/'，本地预览也兼容
+const isCI = !!process.env.CI
+const base = isCI ? '/ai-terms-fun/' : '/'
+
 export default defineConfig({
   title: 'AI 黑话翻译器',
   description: '把 AI 圈的黑话，从听不懂的咒语翻译成能笑出声的常识。硬核考据，冷面吐槽，一个词读懂五层。',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
+  base,
+
+  // 词条模板和 demo 链接里含有 <slug> 等占位符，构建时不当作死链
+  ignoreDeadLinks: [
+    /^<.*>$/,            // <slug> 这类占位
+    /\/_template$/,      // 模板页内的示例链接
+    /\.\/链接/,           // 模板里的中文占位「链接」
+    /index$/,            // demos/<slug>/index 这类未生成的目录链接
+  ],
 
   head: [
     ['meta', { name: 'author', content: 'ai-terms-fun' }],
@@ -36,6 +49,7 @@ export default defineConfig({
       {
         text: '📚 经典',
         items: [
+          { text: 'Embedding - 嵌入', link: '/embedding' },
           { text: '（征集投稿中）', link: '/' },
         ],
       },

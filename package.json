@@ -1,6 +1,7 @@
 {
   "name": "ai-terms-fun",
   "version": "0.1.0",
+  "type": "module",
   "description": "把 AI 圈的黑话，从听不懂的咒语翻译成能笑出声的常识。硬核考据，冷面吐槽，一个词读懂五层。",
   "scripts": {
     "dev": "vitepress dev docs",

@@ -8,7 +8,7 @@
 
 这是最有价值的贡献。流程：
 
-1. 从 [Issue 列表](../../issues) 里找一个标了 `help wanted` 的词，或者自己开 Issue 说"我想写 XXX"（避免撞车）
+1. 从 [Issue 列表](https://github.com/slowleelab/ai-terms-fun/issues) 里找一个标了 `help wanted` 的词，或者自己开 Issue 说"我想写 XXX"（避免撞车）
 2. 复制 [`terms/_template.md`](./terms/_template.md) 作为起点
 3. 按**五层结构**写完，提 PR
 4. 等待 Review（通常 3 天内）
