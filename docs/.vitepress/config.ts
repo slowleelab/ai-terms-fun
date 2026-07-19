@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(positional-encoding|encoder-decoder|bert|gpt|cnn-rnn-lstm|model-components)$/,
+    /^\.?\/(encoder-decoder|bert|gpt|cnn-rnn-lstm|model-components)$/,
     /^\.?\/(pre-training|fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
     /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
@@ -140,7 +140,7 @@ export default defineConfig({
               { text: '✅ Embedding - 嵌入', link: '/embedding' },
               { text: '高维向量', link: '/roadmap' },
               { text: '稠密向量 vs 稀疏向量', link: '/roadmap' },
-              { text: '位置编码', link: '/roadmap' },
+              { text: '✅ 位置编码', link: '/positional-encoding' },
               { text: '多模态 Embedding（CLIP）', link: '/roadmap' },
             ],
           },
