@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(gpt|cnn-rnn-lstm|model-components)$/,
+    /^\.?\/(cnn-rnn-lstm|model-components)$/,
     /^\.?\/(pre-training|fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
     /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
@@ -70,7 +70,7 @@ export default defineConfig({
               { text: '✅ 多头注意力', link: '/multi-head-attention' },
               { text: '✅ 编码器-解码器', link: '/encoder-decoder' },
               { text: '✅ BERT（仅编码器）', link: '/bert' },
-              { text: 'GPT / LLaMA（仅解码器）', link: '/roadmap' },
+              { text: '✅ GPT / LLaMA（仅解码器）', link: '/gpt' },
               { text: '传统模型：CNN / RNN / LSTM', link: '/roadmap' },
               { text: '模型组件：参数 / 层 / 激活函数', link: '/roadmap' },
             ],
