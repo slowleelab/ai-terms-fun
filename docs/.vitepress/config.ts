@@ -15,12 +15,22 @@ export default defineConfig({
   cleanUrls: true,
   base,
 
-  // 词条模板和 demo 链接里含有 <slug> 等占位符，构建时不当作死链
+  // 词条间的交叉引用：允许指向路线图中已规划但尚未编写的词条。
+  // 已写词条自然不会死链；拼错的不在白名单内，仍会被报出。
+  // 前缀 \.? 同时匹配 /xxx 和 ./xxx 两种写法。
   ignoreDeadLinks: [
     /^<.*>$/,            // <slug> 这类占位
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
+    /^\.?\/(multi-head-attention|positional-encoding|encoder-decoder|bert|gpt|cnn-rnn-lstm|model-components)$/,
+    /^\.?\/(pre-training|fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
+    /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
+    /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
+    /^\.?\/(tokenizer|token|chunking|high-dim-vector|dense-sparse-vector|clip|context-window)$/,
+    /^\.?\/(inverted-index|tf-idf|bm25|knn-ann|ann-algorithms|ann-libraries|vector-database)$/,
+    /^\.?\/(two-tower|cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
+    /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
   ],
 
   head: [
@@ -55,8 +65,8 @@ export default defineConfig({
             text: '基础架构',
             collapsed: true,
             items: [
-              { text: 'Transformer', link: '/roadmap' },
-              { text: '└ 自注意力', link: '/roadmap' },
+              { text: '✅ Transformer', link: '/transformer' },
+              { text: '✅ 自注意力', link: '/self-attention' },
               { text: '└ 多头注意力', link: '/roadmap' },
               { text: '└ 编码器-解码器', link: '/roadmap' },
               { text: 'BERT（仅编码器）', link: '/roadmap' },

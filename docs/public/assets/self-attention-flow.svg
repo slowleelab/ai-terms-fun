@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#a0a0b0"/>
+    </marker>
+  </defs>
+
+  <rect width="900" height="620" fill="url(#bg)"/>
+
+  <!-- 标题 -->
+  <text x="450" y="40" text-anchor="middle" fill="#e94560" font-family="ui-sans-serif, system-ui, sans-serif" font-size="26" font-weight="700">自注意力计算流：Q · Kᵀ → 缩放 → softmax → · V</text>
+  <text x="450" y="66" text-anchor="middle" fill="#8888aa" font-family="ui-monospace, monospace" font-size="13">Attention(Q,K,V) = softmax(QKᵀ / √dₖ) · V</text>
+
+  <!-- 输入 X -->
+  <g transform="translate(60, 290)">
+    <rect x="0" y="0" width="90" height="60" fill="#4a7fa8" rx="6"/>
+    <text x="45" y="30" text-anchor="middle" fill="white" font-family="ui-sans-serif, sans-serif" font-size="20" font-weight="700">X</text>
+    <text x="45" y="48" text-anchor="middle" fill="#cfe0ee" font-family="ui-monospace, monospace" font-size="11">[n, d]</text>
+    <text x="45" y="82" text-anchor="middle" fill="#a0a0b0" font-size="12">输入序列</text>
+  </g>
+
+  <!-- 三个投影矩阵 -->
+  <g transform="translate(220, 140)">
+    <rect x="0" y="0" width="70" height="40" fill="#8b5a8b" rx="5"/>
+    <text x="35" y="26" text-anchor="middle" fill="white" font-size="15" font-weight="700">W_Q</text>
+    <text x="35" y="-12" text-anchor="middle" fill="#d8b0d8" font-size="11">查询投影</text>
+  </g>
+  <g transform="translate(220, 300)">
+    <rect x="0" y="0" width="70" height="40" fill="#5a8b6a" rx="5"/>
+    <text x="35" y="26" text-anchor="middle" fill="white" font-size="15" font-weight="700">W_K</text>
+    <text x="35" y="-12" text-anchor="middle" fill="#b0d8b8" font-size="11">键投影</text>
+  </g>
+  <g transform="translate(220, 460)">
+    <rect x="0" y="0" width="70" height="40" fill="#8b7a4a" rx="5"/>
+    <text x="35" y="26" text-anchor="middle" fill="white" font-size="15" font-weight="700">W_V</text>
+    <text x="35" y="-12" text-anchor="middle" fill="#d8c8a0" font-size="11">值投影</text>
+  </g>
+
+  <!-- X 到三个 W 的箭头 -->
+  <path d="M 150 305 C 185 305, 185 160, 220 160" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 150 320 L 220 320" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 150 335 C 185 335, 185 480, 220 480" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Q K V -->
+  <g transform="translate(340, 150)">
+    <rect x="0" y="0" width="80" height="50" fill="#a060b0" rx="6"/>
+    <text x="40" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="700">Q</text>
+    <text x="40" y="68" text-anchor="middle" fill="#c8a0d8" font-family="ui-monospace, monospace" font-size="11">[n, dₖ]</text>
+  </g>
+  <g transform="translate(340, 305)">
+    <rect x="0" y="0" width="80" height="50" fill="#60a070" rx="6"/>
+    <text x="40" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="700">K</text>
+    <text x="40" y="68" text-anchor="middle" fill="#a0d8b0" font-family="ui-monospace, monospace" font-size="11">[n, dₖ]</text>
+  </g>
+  <g transform="translate(340, 460)">
+    <rect x="0" y="0" width="80" height="50" fill="#a09060" rx="6"/>
+    <text x="40" y="32" text-anchor="middle" fill="white" font-size="20" font-weight="700">V</text>
+    <text x="40" y="68" text-anchor="middle" fill="#d8c8a0" font-family="ui-monospace, monospace" font-size="11">[n, dᵥ]</text>
+  </g>
+
+  <!-- W 到 Q/K/V 的箭头 -->
+  <path d="M 290 160 L 340 175" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 290 320 L 340 325" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 290 480 L 340 485" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Q·Kᵀ -->
+  <g transform="translate(500, 220)">
+    <rect x="0" y="0" width="120" height="70" fill="#3a5a8a" rx="6"/>
+    <text x="60" y="32" text-anchor="middle" fill="white" font-size="16" font-weight="700">Q · Kᵀ</text>
+    <text x="60" y="52" text-anchor="middle" fill="#a0c0e0" font-family="ui-monospace, monospace" font-size="11">[n, n] 相似度</text>
+    <text x="60" y="-12" text-anchor="middle" fill="#e94560" font-size="11">÷ √dₖ 缩放</text>
+  </g>
+
+  <!-- Q/K 到点积的箭头 -->
+  <path d="M 420 175 C 460 175, 470 230, 500 240" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <path d="M 420 320 C 460 320, 470 280, 500 270" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- softmax -->
+  <g transform="translate(680, 220)">
+    <rect x="0" y="0" width="120" height="70" fill="#5a3a8a" rx="6"/>
+    <text x="60" y="32" text-anchor="middle" fill="white" font-size="16" font-weight="700">softmax</text>
+    <text x="60" y="52" text-anchor="middle" fill="#c0a0e0" font-family="ui-monospace, monospace" font-size="11">权重 [n, n]</text>
+  </g>
+  <path d="M 620 255 L 680 255" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- 权重 · V = 输出 -->
+  <g transform="translate(680, 440)">
+    <rect x="0" y="0" width="140" height="80" fill="#8a3a5a" rx="6"/>
+    <text x="70" y="32" text-anchor="middle" fill="white" font-size="16" font-weight="700">权重 · V</text>
+    <text x="70" y="55" text-anchor="middle" fill="#e0a0b0" font-family="ui-monospace, monospace" font-size="12">输出 [n, dᵥ]</text>
+  </g>
+
+  <!-- softmax 到输出的箭头 -->
+  <path d="M 740 290 C 760 350, 760 380, 750 440" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+  <!-- V 到输出的箭头 -->
+  <path d="M 420 485 C 500 485, 580 470, 680 470" stroke="#a0a0b0" stroke-width="1.5" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- 底部说明 -->
+  <text x="450" y="590" text-anchor="middle" fill="#8888aa" font-family="ui-sans-serif, sans-serif" font-size="13">
+    核心：每个位置的新表示 = 所有位置 V 的加权和，权重由 Q·K 相似度决定
+  </text>
+  <text x="450" y="608" text-anchor="middle" fill="#666688" font-family="ui-monospace, monospace" font-size="11">ai-terms-fun / self-attention</text>
+</svg>

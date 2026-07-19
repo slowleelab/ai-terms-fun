@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**2 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**4 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -17,7 +17,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 ### 基础架构
 
-- ⬜ Transformer -- 现代大模型的底座
+- ✅ [Transformer](./transformer) -- 现代大模型的底座
 - ⬜ 自注意力 Self-Attention -- Transformer 的核心机制
 - ⬜ 多头注意力 Multi-Head Attention -- 为什么"多头"比"单头"强
 - ⬜ 编码器-解码器 Encoder-Decoder -- 三种架构的分工
