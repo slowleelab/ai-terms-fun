@@ -1,7 +1,7 @@
 ---
 title: RAG（检索增强生成）
 slug: rag
-category: 热点
+category: 评估与应用
 tags: [LLM, 检索, 向量数据库, RAG]
 author: ai-terms-fun
 created: 2026-07-19
@@ -14,11 +14,11 @@ updated: 2026-07-19
 
 ---
 
-## L1 · 一句话梗
+## L1 · 一句话点破
 
 RAG = **Retrieval-Augmented Generation** = "检索增强生成"。
 
-大白话：**模型不会就翻书，翻完再答题。**
+一句话本质：**生成回答前，先从外部知识库检索相关片段，塞进 prompt 让模型基于上下文作答。**
 
 是当前 LLM 应用层最被滥用、也最被低估的一个词。说它被滥用，是因为"我做了个 RAG"往往约等于"我调了 LangChain 的 `RetrievalQA.from_chain_type()`"；说它被低估，是因为真把它做好的人，能拉开同行一个身位。
 
@@ -107,9 +107,9 @@ Gao 等人 2023 年的综述把 RAG 演进分成三代：
 
 参见 [`demos/rag/`](../demos/rag/) -- 用 ~60 行 Python + sentence-transformers + FAISS，从零跑通一个能用的 RAG，不依赖任何云服务。
 
-## L5 · 八卦与坑
+## L5 · 沿革与坑
 
-### 历史
+### 沿革
 
 - **2020 年**，Facebook AI Research（FAIR）的 Lewis 等人发表原始 RAG 论文。当时的主角还不是 LLM，而是 T5、BART 这类 seq2seq 模型，目标是做开放域问答。当时几乎没人关心。
 - **2022 年底 ChatGPT 发布**，所有人突然发现"模型会一本正经胡说八道"，RAG 作为最直接的"外挂知识"方案被翻出来，瞬间起飞。

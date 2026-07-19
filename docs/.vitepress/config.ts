@@ -4,9 +4,12 @@ import { defineConfig } from 'vitepress'
 const isCI = !!process.env.CI
 const base = isCI ? '/ai-terms-fun/' : '/'
 
+// 未写词条统一指向路线图页，引导读者看到完整规划
+const TODO = { text: '⬜ 待编写（见路线图）', link: '/roadmap' }
+
 export default defineConfig({
   title: 'AI 黑话翻译器',
-  description: '把 AI 圈的黑话，从听不懂的咒语翻译成能笑出声的常识。硬核考据，冷面吐槽，一个词读懂五层。',
+  description: '把 AI 圈的概念拆到骨头，再用人话讲清楚。硬核考据为主，通俗类比辅助，一个词读懂五层。',
   lang: 'zh-CN',
   lastUpdated: true,
   cleanUrls: true,
@@ -23,7 +26,7 @@ export default defineConfig({
   head: [
     ['meta', { name: 'author', content: 'ai-terms-fun' }],
     ['meta', { property: 'og:title', content: 'AI 黑话翻译器' }],
-    ['meta', { property: 'og:description', content: '一个词读懂五层。硬核考据 + 冷幽默。' }],
+    ['meta', { property: 'og:description', content: '把 AI 概念拆到骨头，再用人话讲清楚。一个词读懂五层。' }],
     ['meta', { property: 'og:type', content: 'website' }],
   ],
 
@@ -32,7 +35,7 @@ export default defineConfig({
 
     nav: [
       { text: '首页', link: '/' },
-      { text: '热点', link: '/rag' },
+      { text: '内容路线图', link: '/roadmap' },
       {
         text: 'GitHub',
         link: 'https://github.com/slowleelab/ai-terms-fun',
@@ -41,22 +44,173 @@ export default defineConfig({
 
     sidebar: [
       {
-        text: '🔥 热点',
+        text: '🗺️ 内容路线图',
+        link: '/roadmap',
+      },
+      {
+        text: '🏗️ 模型架构与训练',
+        collapsed: false,
         items: [
-          { text: 'RAG - 检索增强生成', link: '/rag' },
+          {
+            text: '基础架构',
+            collapsed: true,
+            items: [
+              { text: 'Transformer', link: '/roadmap' },
+              { text: '└ 自注意力', link: '/roadmap' },
+              { text: '└ 多头注意力', link: '/roadmap' },
+              { text: '└ 编码器-解码器', link: '/roadmap' },
+              { text: 'BERT（仅编码器）', link: '/roadmap' },
+              { text: 'GPT / LLaMA（仅解码器）', link: '/roadmap' },
+              { text: '传统模型：CNN / RNN / LSTM', link: '/roadmap' },
+              { text: '模型组件：参数 / 层 / 激活函数', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '训练范式',
+            collapsed: true,
+            items: [
+              { text: '预训练', link: '/roadmap' },
+              { text: '微调', link: '/roadmap' },
+              { text: '指令微调', link: '/roadmap' },
+              { text: 'RLHF', link: '/roadmap' },
+              { text: '迁移学习', link: '/roadmap' },
+              { text: '损失函数', link: '/roadmap' },
+              { text: '优化器（Adam / AdamW）', link: '/roadmap' },
+              { text: '过拟合 & 正则化', link: '/roadmap' },
+            ],
+          },
         ],
       },
       {
-        text: '📚 经典',
+        text: '⚡ 推理与生成',
+        collapsed: false,
         items: [
-          { text: 'Embedding - 嵌入', link: '/embedding' },
-          { text: '（征集投稿中）', link: '/' },
+          { text: '自回归生成', link: '/roadmap' },
+          {
+            text: '解码策略',
+            collapsed: true,
+            items: [
+              { text: '贪婪解码', link: '/roadmap' },
+              { text: '束搜索 Beam Search', link: '/roadmap' },
+              { text: 'Top-k 采样', link: '/roadmap' },
+              { text: 'Top-p 采样', link: '/roadmap' },
+            ],
+          },
+          { text: '温度 Temperature', link: '/roadmap' },
+          { text: '幻觉 Hallucination', link: '/roadmap' },
         ],
       },
       {
-        text: '🧪 工程',
+        text: '🗜️ 模型压缩与加速',
+        collapsed: false,
         items: [
-          { text: '（征集投稿中）', link: '/' },
+          { text: '量化（INT8 / INT4）', link: '/roadmap' },
+          { text: '知识蒸馏', link: '/roadmap' },
+          { text: '剪枝', link: '/roadmap' },
+          { text: '推理引擎（vLLM / TensorRT-LLM）', link: '/roadmap' },
+        ],
+      },
+      {
+        text: '🔤 数据表示与编码',
+        collapsed: false,
+        items: [
+          {
+            text: '文本预处理',
+            collapsed: true,
+            items: [
+              { text: '分词器 Tokenizer', link: '/roadmap' },
+              { text: 'Token 词元', link: '/roadmap' },
+              { text: '分块 Chunking', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '向量表示',
+            collapsed: false,
+            items: [
+              { text: '✅ Embedding - 嵌入', link: '/embedding' },
+              { text: '高维向量', link: '/roadmap' },
+              { text: '稠密向量 vs 稀疏向量', link: '/roadmap' },
+              { text: '位置编码', link: '/roadmap' },
+              { text: '多模态 Embedding（CLIP）', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '上下文管理',
+            collapsed: true,
+            items: [
+              { text: '上下文窗口 Context Window', link: '/roadmap' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '🔍 检索与索引',
+        collapsed: false,
+        items: [
+          {
+            text: '关键词检索',
+            collapsed: true,
+            items: [
+              { text: '倒排索引', link: '/roadmap' },
+              { text: 'TF-IDF', link: '/roadmap' },
+              { text: 'BM25', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '向量检索',
+            collapsed: true,
+            items: [
+              { text: 'KNN / ANN', link: '/roadmap' },
+              { text: '索引算法：HNSW / IVF / PQ / LSH', link: '/roadmap' },
+              { text: '算法库：Faiss / ScaNN / Annoy', link: '/roadmap' },
+              { text: '向量数据库', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '神经检索模型',
+            collapsed: true,
+            items: [
+              { text: '双塔模型 Two-Tower', link: '/roadmap' },
+              { text: '交叉编码器 Cross-encoder', link: '/roadmap' },
+              { text: 'ColBERT 迟交互', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '排序与融合',
+            collapsed: true,
+            items: [
+              { text: '召回 vs 重排序', link: '/roadmap' },
+              { text: 'Top-K', link: '/roadmap' },
+              { text: '混合搜索 Hybrid Search', link: '/roadmap' },
+              { text: 'RRF 倒数排名融合', link: '/roadmap' },
+              { text: '加权重排', link: '/roadmap' },
+              { text: '学习排序 LTR', link: '/roadmap' },
+            ],
+          },
+        ],
+      },
+      {
+        text: '📊 评估与应用',
+        collapsed: false,
+        items: [
+          {
+            text: '评估指标',
+            collapsed: true,
+            items: [
+              { text: 'Hit Rate', link: '/roadmap' },
+              { text: 'Recall@K / Precision@K', link: '/roadmap' },
+              { text: 'MRR', link: '/roadmap' },
+              { text: 'NDCG', link: '/roadmap' },
+            ],
+          },
+          {
+            text: '应用框架',
+            collapsed: false,
+            items: [
+              { text: '✅ RAG - 检索增强生成', link: '/rag' },
+              { text: '知识库 Knowledge Base', link: '/roadmap' },
+            ],
+          },
         ],
       },
       {
