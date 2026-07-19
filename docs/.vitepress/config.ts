@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(multi-head-attention|positional-encoding|encoder-decoder|bert|gpt|cnn-rnn-lstm|model-components)$/,
+    /^\.?\/(positional-encoding|encoder-decoder|bert|gpt|cnn-rnn-lstm|model-components)$/,
     /^\.?\/(pre-training|fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
     /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
@@ -67,7 +67,7 @@ export default defineConfig({
             items: [
               { text: '✅ Transformer', link: '/transformer' },
               { text: '✅ 自注意力', link: '/self-attention' },
-              { text: '└ 多头注意力', link: '/roadmap' },
+              { text: '✅ 多头注意力', link: '/multi-head-attention' },
               { text: '└ 编码器-解码器', link: '/roadmap' },
               { text: 'BERT（仅编码器）', link: '/roadmap' },
               { text: 'GPT / LLaMA（仅解码器）', link: '/roadmap' },
