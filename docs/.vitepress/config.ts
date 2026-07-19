@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(pre-training|fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
+    /^\.?\/(fine-tuning|instruction-tuning|rlhf|transfer-learning|loss-function|optimizer|overfitting)$/,
     /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
     /^\.?\/(tokenizer|token|chunking|high-dim-vector|dense-sparse-vector|clip|context-window)$/,
@@ -78,7 +78,7 @@ export default defineConfig({
             text: '训练范式',
             collapsed: true,
             items: [
-              { text: '预训练', link: '/roadmap' },
+              { text: '✅ 预训练', link: '/pre-training' },
               { text: '微调', link: '/roadmap' },
               { text: '指令微调', link: '/roadmap' },
               { text: 'RLHF', link: '/roadmap' },
