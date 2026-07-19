@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**17 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**19 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -34,8 +34,8 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [RLHF](./rlhf) -- 用人类反馈做强化学习
 - ✅ [迁移学习 Transfer Learning](./transfer-learning) -- 为什么预训练能迁移
 - ✅ [损失函数 Loss Function](./loss-function) -- 模型怎么知道自己错没错
-- ⬜ 优化器（Adam / AdamW） -- 怎么沿着梯度下山
-- ⬜ 过拟合 & 正则化 -- Dropout / 权重衰减为什么有效
+- ✅ [优化器（Adam / AdamW）](./optimizer) -- 怎么沿着梯度下山
+- ✅ [过拟合 & 正则化](./overfitting) -- Dropout / 权重衰减为什么有效
 
 ---
 

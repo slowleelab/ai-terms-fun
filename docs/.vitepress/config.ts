@@ -23,7 +23,6 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(optimizer|overfitting)$/,
     /^\.?\/(autoregressive|greedy-decoding|beam-search|top-k-sampling|top-p-sampling|temperature|hallucination)$/,
     /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
     /^\.?\/(tokenizer|token|chunking|high-dim-vector|dense-sparse-vector|clip|context-window)$/,
@@ -84,8 +83,8 @@ export default defineConfig({
               { text: '✅ RLHF', link: '/rlhf' },
               { text: '✅ 迁移学习', link: '/transfer-learning' },
               { text: '✅ 损失函数', link: '/loss-function' },
-              { text: '优化器（Adam / AdamW）', link: '/roadmap' },
-              { text: '过拟合 & 正则化', link: '/roadmap' },
+              { text: '✅ 优化器（Adam / AdamW）', link: '/optimizer' },
+              { text: '✅ 过拟合 & 正则化', link: '/overfitting' },
             ],
           },
         ],
