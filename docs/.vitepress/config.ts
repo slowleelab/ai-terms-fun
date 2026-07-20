@@ -23,7 +23,6 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(context-window)$/,
     /^\.?\/(inverted-index|tf-idf|bm25|knn-ann|ann-algorithms|ann-libraries|vector-database)$/,
     /^\.?\/(two-tower|cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
     /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
@@ -144,7 +143,7 @@ export default defineConfig({
             text: '上下文管理',
             collapsed: true,
             items: [
-              { text: '上下文窗口 Context Window', link: '/roadmap' },
+              { text: '✅ 上下文窗口 Context Window', link: '/context-window' },
             ],
           },
         ],
