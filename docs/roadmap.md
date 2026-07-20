@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**35 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**36 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -75,7 +75,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [高维向量](./high-dim-vector) -- 维度灾难与维度的几何意义
 - ✅ [稠密向量 vs 稀疏向量](./dense-sparse-vector)
 - ✅ [位置编码 Positional Encoding](./positional-encoding) -- Transformer 怎么知道顺序
-- ⬜ 多模态 Embedding（CLIP） -- 图文对齐到同一空间
+- ✅ [多模态 Embedding（CLIP）](./clip) -- 图文对齐到同一空间
 
 ### 上下文管理
 
