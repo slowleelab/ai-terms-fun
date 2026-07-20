@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(knn-ann|ann-algorithms|ann-libraries|vector-database)$/,
+    /^\.?\/(ann-algorithms|ann-libraries|vector-database)$/,
     /^\.?\/(two-tower|cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
     /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
   ],
@@ -165,7 +165,7 @@ export default defineConfig({
             text: '向量检索',
             collapsed: true,
             items: [
-              { text: 'KNN / ANN', link: '/roadmap' },
+              { text: '✅ KNN / ANN', link: '/knn-ann' },
               { text: '索引算法：HNSW / IVF / PQ / LSH', link: '/roadmap' },
               { text: '算法库：Faiss / ScaNN / Annoy', link: '/roadmap' },
               { text: '向量数据库', link: '/roadmap' },
