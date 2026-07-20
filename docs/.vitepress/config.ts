@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(rrf|weighted-fusion|ltr)$/,
+    /^\.?\/(weighted-fusion|ltr)$/,
     /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
   ],
 
@@ -186,7 +186,7 @@ export default defineConfig({
               { text: '✅ 召回 vs 重排序', link: '/recall-rerank' },
               { text: '✅ Top-K 检索', link: '/top-k' },
               { text: '✅ 混合搜索 Hybrid Search', link: '/hybrid-search' },
-              { text: 'RRF 倒数排名融合', link: '/roadmap' },
+              { text: '✅ RRF 倒数排名融合', link: '/rrf' },
               { text: '加权重排', link: '/roadmap' },
               { text: '学习排序 LTR', link: '/roadmap' },
             ],
