@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(quantization|knowledge-distillation|pruning|inference-engine)$/,
+    /^\.?\/(knowledge-distillation|pruning|inference-engine)$/,
     /^\.?\/(tokenizer|token|chunking|high-dim-vector|dense-sparse-vector|clip|context-window)$/,
     /^\.?\/(inverted-index|tf-idf|bm25|knn-ann|ann-algorithms|ann-libraries|vector-database)$/,
     /^\.?\/(two-tower|cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
@@ -111,7 +111,7 @@ export default defineConfig({
         text: '🗜️ 模型压缩与加速',
         collapsed: false,
         items: [
-          { text: '量化（INT8 / INT4）', link: '/roadmap' },
+          { text: '✅ 量化（INT8 / INT4）', link: '/quantization' },
           { text: '知识蒸馏', link: '/roadmap' },
           { text: '剪枝', link: '/roadmap' },
           { text: '推理引擎（vLLM / TensorRT-LLM）', link: '/roadmap' },
