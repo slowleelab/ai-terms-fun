@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**28 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**30 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -56,8 +56,8 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 - ✅ [量化（INT8 / INT4）](./quantization) -- 用更少比特存权重
 - ✅ [知识蒸馏 Knowledge Distillation](./knowledge-distillation) -- 大模型教小模型
-- ⬜ 剪枝 Pruning -- 删掉没用的连接
-- ⬜ 推理引擎（vLLM / TensorRT-LLM） -- 生产部署的加速器
+- ✅ [剪枝 Pruning](./pruning) -- 删掉没用的连接
+- ✅ [推理引擎（vLLM / TensorRT-LLM）](./inference-engine) -- 生产部署的加速器
 
 ---
 
