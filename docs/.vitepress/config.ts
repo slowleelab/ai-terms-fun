@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(two-tower|cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
+    /^\.?\/(cross-encoder|colbert|recall-rerank|top-k|hybrid-search|rrf|weighted-fusion|ltr)$/,
     /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
   ],
 
@@ -174,7 +174,7 @@ export default defineConfig({
             text: '神经检索模型',
             collapsed: true,
             items: [
-              { text: '双塔模型 Two-Tower', link: '/roadmap' },
+              { text: '✅ 双塔模型 Two-Tower', link: '/two-tower' },
               { text: '交叉编码器 Cross-encoder', link: '/roadmap' },
               { text: 'ColBERT 迟交互', link: '/roadmap' },
             ],
