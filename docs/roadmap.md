@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**42 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**43 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -95,7 +95,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 - ✅ [KNN / ANN](./knn-ann) -- 精确 vs 近似最近邻
 - ✅ [索引算法：HNSW / IVF / PQ / LSH](./ann-algorithms)
-- ⬜ 算法库：Faiss / ScaNN / Annoy
+- ✅ [算法库：Faiss / ScaNN / Annoy](./ann-libraries)
 - ⬜ 向量数据库 -- Milvus / Pinecone / Weaviate / Qdrant / Chroma
 
 ### 神经检索模型
