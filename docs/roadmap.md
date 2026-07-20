@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**32 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**33 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -67,7 +67,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 - ✅ [分词器 Tokenizer](./tokenizer) -- BPE / WordPiece / SentencePiece
 - ✅ [Token 词元](./token) -- 模型的最小处理单位
-- ⬜ 分块 Chunking -- 长文档怎么切
+- ✅ [分块 Chunking](./chunking) -- 长文档怎么切
 
 ### 向量表示
 
