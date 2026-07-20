@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**51 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**52 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -110,7 +110,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [Top-K 检索](./top-k)
 - ✅ [混合搜索 Hybrid Search](./hybrid-search) -- 关键词 + 向量
 - ✅ [RRF 倒数排名融合](./rrf)
-- ⬜ 加权重排 Weighted Fusion
+- ✅ [加权重排 Weighted Fusion](./weighted-fusion)
 - ⬜ 学习排序 LTR
 
 ---
