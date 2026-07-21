@@ -23,7 +23,6 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(knowledge-base)$/,
   ],
 
   head: [
@@ -211,7 +210,7 @@ export default defineConfig({
             collapsed: false,
             items: [
               { text: '✅ RAG - 检索增强生成', link: '/rag' },
-              { text: '知识库 Knowledge Base', link: '/roadmap' },
+              { text: '✅ 知识库 Knowledge Base', link: '/knowledge-base' },
             ],
           },
         ],
