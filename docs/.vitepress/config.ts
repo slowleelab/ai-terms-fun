@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(hit-rate|recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
+    /^\.?\/(recall-precision-at-k|mrr|ndcg|knowledge-base)$/,
   ],
 
   head: [
@@ -200,7 +200,7 @@ export default defineConfig({
             text: '评估指标',
             collapsed: true,
             items: [
-              { text: 'Hit Rate', link: '/roadmap' },
+              { text: '✅ Hit Rate', link: '/hit-rate' },
               { text: 'Recall@K / Precision@K', link: '/roadmap' },
               { text: 'MRR', link: '/roadmap' },
               { text: 'NDCG', link: '/roadmap' },
