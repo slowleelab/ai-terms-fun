@@ -216,6 +216,17 @@ export default defineConfig({
         ],
       },
       {
+        text: '🚀 进阶专题',
+        collapsed: false,
+        items: [
+          { text: '✅ GraphRAG 图谱增强检索', link: '/graphrag' },
+          { text: '✅ Self-RAG 自反思检索', link: '/self-rag' },
+          { text: '✅ Corrective RAG 检索纠错', link: '/corrective-rag' },
+          { text: '✅ Agentic RAG 智能体检索', link: '/agentic-rag' },
+          { text: '✅ Multi-modal RAG 多模态检索', link: '/multimodal-rag' },
+        ],
+      },
+      {
         text: '关于',
         items: [
           { text: '贡献指南', link: '/contributing' },

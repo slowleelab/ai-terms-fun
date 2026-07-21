@@ -137,9 +137,10 @@ Gao 等人 2023 年的综述把 RAG 演进分成三代：
 
 - 📄 [Lewis et al., 2020 - RAG 原始论文](https://arxiv.org/abs/2005.11401)
 - 📄 [Gao et al., 2023 - RAG 综述](https://arxiv.org/abs/2312.10997)（强烈推荐，把 RAG 的演进讲透了）
-- 📄 [Self-RAG (Asai et al., 2023)](https://arxiv.org/abs/2310.11511) - 让模型自己决定要不要检索
+- 📄 [Self-RAG (Asai et al., 2023)](https://arxiv.org/abs/2310.11511) - 让模型自己决定要不要检索（详见 [Self-RAG 词条](./self-rag)）
 - 🔧 [LlamaIndex 文档](https://docs.llamaindex.ai/) - 工程实践参考
 - 📊 [RAG评测：RAGAS](https://docs.ragas.io/) - 怎么客观评估一个 RAG 系统
+- 🚀 进阶专题：[GraphRAG](./graphrag) / [Self-RAG](./self-rag) / [Corrective RAG](./corrective-rag) / [Agentic RAG](./agentic-rag) / [Multi-modal RAG](./multimodal-rag) - RAG 范式的演进与变体
 
 ---
 

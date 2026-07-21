@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶专题：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -128,6 +128,18 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 - ✅ [RAG - 检索增强生成](./rag) -- 给大模型发一本翻到目标页的参考书
 - ✅ [知识库 Knowledge Base](./knowledge-base) -- RAG 的知识存储与管理
+
+---
+
+## 🚀 进阶专题
+
+进阶专题是基础 58 词条之外的增量系列，聚焦 RAG 范式的演进与变体。每篇都假设你已读过 [RAG](./rag) 和 [知识库](./knowledge-base)。
+
+- ✅ [GraphRAG 图谱增强检索](./graphrag) -- 知识图谱 + 社区聚类，专治全局性问题
+- ✅ [Self-RAG 自反思检索](./self-rag) -- 反思 token 让 LLM 自决检索与评价
+- ✅ [Corrective RAG 检索纠错](./corrective-rag) -- 即插即用的检索质检 + web 兜底
+- ✅ [Agentic RAG 智能体检索](./agentic-rag) -- 多轮自主推理循环，专治复杂问题
+- ✅ [Multi-modal RAG 多模态检索](./multimodal-rag) -- 跨模态对齐，图文混排检索
 
 ---
 
