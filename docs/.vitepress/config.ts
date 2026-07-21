@@ -23,7 +23,7 @@ export default defineConfig({
     /\/_template$/,      // 模板页内的示例链接
     /\.\/链接/,           // 模板里的中文占位「链接」
     /index$/,            // demos/<slug>/index 这类未生成的目录链接
-    /^\.?\/(mrr|ndcg|knowledge-base)$/,
+    /^\.?\/(ndcg|knowledge-base)$/,
   ],
 
   head: [
@@ -202,7 +202,7 @@ export default defineConfig({
             items: [
               { text: '✅ Hit Rate', link: '/hit-rate' },
               { text: '✅ Recall@K / Precision@K', link: '/recall-precision-at-k' },
-              { text: 'MRR', link: '/roadmap' },
+              { text: '✅ MRR', link: '/mrr' },
               { text: 'NDCG', link: '/roadmap' },
             ],
           },
