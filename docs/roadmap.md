@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**　进阶专题：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -133,13 +133,27 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 ## 🚀 进阶专题
 
-进阶专题是基础 58 词条之外的增量系列，聚焦 RAG 范式的演进与变体。每篇都假设你已读过 [RAG](./rag) 和 [知识库](./knowledge-base)。
+进阶专题是基础 58 词条之外的增量系列，按主题分批扩展。每篇都假设你已读过相关基础词条。
+
+### 进阶 RAG
+
+聚焦 RAG 范式的演进与变体。假设已读 [RAG](./rag) 和 [知识库](./knowledge-base)。
 
 - ✅ [GraphRAG 图谱增强检索](./graphrag) -- 知识图谱 + 社区聚类，专治全局性问题
 - ✅ [Self-RAG 自反思检索](./self-rag) -- 反思 token 让 LLM 自决检索与评价
 - ✅ [Corrective RAG 检索纠错](./corrective-rag) -- 即插即用的检索质检 + web 兜底
 - ✅ [Agentic RAG 智能体检索](./agentic-rag) -- 多轮自主推理循环，专治复杂问题
 - ✅ [Multi-modal RAG 多模态检索](./multimodal-rag) -- 跨模态对齐，图文混排检索
+
+### 高效微调 PEFT
+
+聚焦参数高效微调方法。假设已读 [微调 Fine-tuning](./fine-tuning) 和 [量化](./quantization)。
+
+- ✅ [LoRA 低秩适配](./lora) -- 冻结基座 + 训低秩 $BA$，事实标准
+- ✅ [QLoRA 量化低秩适配](./qlora) -- 4bit NF4 + LoRA，单卡微调 70B
+- ✅ [Adapter Tuning 适配器微调](./adapter-tuning) -- PEFT 老前辈，瓶颈模块
+- ✅ [Prefix/Prompt Tuning 前缀调优](./prefix-tuning) -- 只调软提示向量，最省参数
+- ✅ [PEFT 总览与选型](./peft) -- 全参 / LoRA / QLoRA / Adapter / Prefix / Prompt 怎么选
 
 ---
 

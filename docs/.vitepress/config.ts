@@ -219,11 +219,28 @@ export default defineConfig({
         text: '🚀 进阶专题',
         collapsed: false,
         items: [
-          { text: '✅ GraphRAG 图谱增强检索', link: '/graphrag' },
-          { text: '✅ Self-RAG 自反思检索', link: '/self-rag' },
-          { text: '✅ Corrective RAG 检索纠错', link: '/corrective-rag' },
-          { text: '✅ Agentic RAG 智能体检索', link: '/agentic-rag' },
-          { text: '✅ Multi-modal RAG 多模态检索', link: '/multimodal-rag' },
+          {
+            text: '进阶 RAG',
+            collapsed: false,
+            items: [
+              { text: '✅ GraphRAG 图谱增强检索', link: '/graphrag' },
+              { text: '✅ Self-RAG 自反思检索', link: '/self-rag' },
+              { text: '✅ Corrective RAG 检索纠错', link: '/corrective-rag' },
+              { text: '✅ Agentic RAG 智能体检索', link: '/agentic-rag' },
+              { text: '✅ Multi-modal RAG 多模态检索', link: '/multimodal-rag' },
+            ],
+          },
+          {
+            text: '高效微调 PEFT',
+            collapsed: false,
+            items: [
+              { text: '✅ LoRA 低秩适配', link: '/lora' },
+              { text: '✅ QLoRA 量化低秩适配', link: '/qlora' },
+              { text: '✅ Adapter Tuning 适配器微调', link: '/adapter-tuning' },
+              { text: '✅ Prefix/Prompt Tuning 前缀调优', link: '/prefix-tuning' },
+              { text: '✅ PEFT 总览与选型', link: '/peft' },
+            ],
+          },
         ],
       },
       {
