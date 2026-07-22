@@ -241,6 +241,17 @@ export default defineConfig({
               { text: '✅ PEFT 总览与选型', link: '/peft' },
             ],
           },
+          {
+            text: '对齐 Alignment',
+            collapsed: false,
+            items: [
+              { text: '✅ SFT 监督微调', link: '/sft' },
+              { text: '✅ Reward Model 奖励模型', link: '/reward-model' },
+              { text: '✅ PPO 近端策略优化', link: '/ppo-rlhf' },
+              { text: '✅ DPO 直接偏好优化', link: '/dpo' },
+              { text: '✅ KTO / SimPO 变体', link: '/kto-simpo' },
+            ],
+          },
         ],
       },
       {

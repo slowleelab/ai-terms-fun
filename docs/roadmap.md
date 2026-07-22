@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -154,6 +154,16 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [Adapter Tuning 适配器微调](./adapter-tuning) -- PEFT 老前辈，瓶颈模块
 - ✅ [Prefix/Prompt Tuning 前缀调优](./prefix-tuning) -- 只调软提示向量，最省参数
 - ✅ [PEFT 总览与选型](./peft) -- 全参 / LoRA / QLoRA / Adapter / Prefix / Prompt 怎么选
+
+### 对齐 Alignment
+
+聚焦从监督微调到偏好优化的完整对齐链路。假设已读 [RLHF](./rlhf) 和 [指令微调](./instruction-tuning)。
+
+- ✅ [SFT 监督微调](./sft) -- 对齐起点，指令-回答对 + 仅回答 loss
+- ✅ [Reward Model 奖励模型](./reward-model) -- 偏好对 + Bradley-Terry，RLHF 的打分器
+- ✅ [PPO 近端策略优化](./ppo-rlhf) -- RLHF 第三阶段，4 模型同框，效果最好
+- ✅ [DPO 直接偏好优化](./dpo) -- 绕开 RM 和 PPO，2 模型监督学习
+- ✅ [KTO / SimPO 变体](./kto-simpo) -- DPO 之后：二元反馈 / 去 ref / 修过对齐
 
 ---
 

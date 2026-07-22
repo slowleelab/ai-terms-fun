@@ -191,6 +191,7 @@ DPO（Direct Preference Optimization, [Rafailov et al., 2023](https://arxiv.org/
 - 📝 [Stanford Alpaca](https://crfm.stanford.edu/2023/03/13/alpaca.html) - 合成数据 SFT 的里程碑
 - 📄 [Zhou et al., 2023 - LIMA](https://arxiv.org/abs/2305.11206) - 1000 条数据的奇迹
 - 📄 [Chung et al., 2022 - FLAN-T5](https://arxiv.org/abs/2210.11416)
+- 🚀 进阶专题·对齐：[SFT 监督微调](./sft) -- 本词条讲指令微调的轮廓，进阶专题把 SFT 的 loss masking / 数据构造 / 过拟合坑拆到骨头
 
 ---
 

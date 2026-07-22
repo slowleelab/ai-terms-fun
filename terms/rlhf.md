@@ -223,6 +223,7 @@ RLHF 解决了"让模型符合人类偏好"，但暴露了几个深层问题：
 - 📄 [Rafailov et al., 2023 - DPO](https://arxiv.org/abs/2305.18290)
 - 📄 [Bai et al., 2022 - Constitutional AI](https://arxiv.org/abs/2212.08073)
 - 📝 [Illustrating RLHF - HuggingFace](https://huggingface.co/blog/rlhf)
+- 🚀 进阶专题·对齐：[SFT](./sft) / [Reward Model](./reward-model) / [PPO](./ppo-rlhf) / [DPO](./dpo) / [KTO-SimPO](./kto-simpo) -- 本词条讲 RLHF 整体框架，5 篇进阶专题拆开三阶段每一步
 
 ---
 
