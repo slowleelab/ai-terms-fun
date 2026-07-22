@@ -263,6 +263,17 @@ export default defineConfig({
               { text: '✅ 量化推理算法 GPTQ/AWQ', link: '/quantization-inference' },
             ],
           },
+          {
+            text: 'Agent',
+            collapsed: false,
+            items: [
+              { text: '✅ ReAct 推理与行动', link: '/react' },
+              { text: '✅ Function Calling 函数调用', link: '/function-calling' },
+              { text: '✅ Planning 任务规划', link: '/planning' },
+              { text: '✅ Memory 记忆机制', link: '/memory' },
+              { text: '✅ Multi-Agent 多智能体', link: '/multi-agent' },
+            ],
+          },
         ],
       },
       {

@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**　推理工程：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**　推理工程：**5 / 5**　Agent：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -174,6 +174,16 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [Continuous Batching 连续批处理](./continuous-batching) -- iteration 级动态拼 batch，GPU 利用率 30%→90%
 - ✅ [Speculative Decoding 推测解码](./speculative-decoding) -- 小模型草拟、大模型并行批改，无损降延迟 2-3x
 - ✅ [量化推理算法 GPTQ/AWQ](./quantization-inference) -- 4bit 权重量化，70B 单卡可跑，精度损失 <1%
+
+### Agent
+
+聚焦 LLM Agent 系统的核心范式。假设已读 [Agentic RAG](./agentic-rag) 和 [推理引擎](./inference-engine)。
+
+- ✅ [ReAct 推理与行动](./react) -- Agent 奠基范式，Thought-Action-Observation 交错循环
+- ✅ [Function Calling 函数调用](./function-calling) -- 结构化工具调用，ReAct 的工程化升级
+- ✅ [Planning 任务规划](./planning) -- Plan-and-Solve / ToT / LATS / Re-plan，先规划再执行
+- ✅ [Memory 记忆机制](./memory) -- 短期+长期+反思，MemGPT 式分层管理
+- ✅ [Multi-Agent 多智能体](./multi-agent) -- 角色分工协作，AutoGen/MetaGPT/CAMEL
 
 ---
 
