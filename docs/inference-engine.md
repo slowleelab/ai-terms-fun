@@ -286,6 +286,14 @@ Chunked: [prefill chunk 1] [decode] [prefill chunk 2] [decode] ...
 - 📝 [NVIDIA TensorRT-LLM](https://github.com/NVIDIA/TensorRT-LLM)
 - 📝 [vLLM 文档](https://docs.vllm.ai/)
 
+**进阶专题 · 推理工程**（每个技术单独深挖）：
+
+- 🚀 [KV-Cache 键值缓存](./kv-cache) -- 自回归推理的基础优化，避免重复算 K/V
+- 🚀 [PagedAttention 分页注意力](./paged-attention) -- vLLM 的内存管理革命，按需分页
+- 🚀 [Continuous Batching 连续批处理](./continuous-batching) -- iteration 级动态拼 batch
+- 🚀 [Speculative Decoding 推测解码](./speculative-decoding) -- 小模型猜、大模型批改，无损 2-3x
+- 🚀 [量化推理算法 GPTQ/AWQ](./quantization-inference) -- 4bit 权重量化，70B 单卡可跑
+
 ---
 
 > *上一篇：[剪枝](./pruning) -- 删掉没用的连接。*

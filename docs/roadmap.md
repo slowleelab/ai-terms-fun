@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**　推理工程：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -164,6 +164,16 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [PPO 近端策略优化](./ppo-rlhf) -- RLHF 第三阶段，4 模型同框，效果最好
 - ✅ [DPO 直接偏好优化](./dpo) -- 绕开 RM 和 PPO，2 模型监督学习
 - ✅ [KTO / SimPO 变体](./kto-simpo) -- DPO 之后：二元反馈 / 去 ref / 修过对齐
+
+### 推理工程
+
+聚焦 LLM 部署侧的加速技术。假设已读 [量化](./quantization) 和 [推理优化](./inference-engine)。
+
+- ✅ [KV-Cache 键值缓存](./kv-cache) -- 避免重复算 K/V，自回归推理的基础优化
+- ✅ [PagedAttention 分页注意力](./paged-attention) -- 按需分页 KV-Cache，vLLM 的内存管理革命
+- ✅ [Continuous Batching 连续批处理](./continuous-batching) -- iteration 级动态拼 batch，GPU 利用率 30%→90%
+- ✅ [Speculative Decoding 推测解码](./speculative-decoding) -- 小模型草拟、大模型并行批改，无损降延迟 2-3x
+- ✅ [量化推理算法 GPTQ/AWQ](./quantization-inference) -- 4bit 权重量化，70B 单卡可跑，精度损失 <1%
 
 ---
 

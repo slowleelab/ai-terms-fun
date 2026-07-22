@@ -252,6 +252,17 @@ export default defineConfig({
               { text: '✅ KTO / SimPO 变体', link: '/kto-simpo' },
             ],
           },
+          {
+            text: '推理工程',
+            collapsed: false,
+            items: [
+              { text: '✅ KV-Cache 键值缓存', link: '/kv-cache' },
+              { text: '✅ PagedAttention 分页注意力', link: '/paged-attention' },
+              { text: '✅ Continuous Batching 连续批处理', link: '/continuous-batching' },
+              { text: '✅ Speculative Decoding 推测解码', link: '/speculative-decoding' },
+              { text: '✅ 量化推理算法 GPTQ/AWQ', link: '/quantization-inference' },
+            ],
+          },
         ],
       },
       {
