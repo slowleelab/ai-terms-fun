@@ -9,7 +9,7 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 
 **图例**：✅ 已完成　⬜ 待编写
 
-当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**　推理工程：**5 / 5**　Agent：**5 / 5**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
+当前进度：**58 / 58**　进阶 RAG：**5 / 5**　高效微调：**5 / 5**　对齐：**5 / 5**　推理工程：**5 / 5**　Agent：**5 / 5**　长上下文：**4 / 4**。目标每周更新 2~3 个。想认领某个 ⬜ 词条？读 贡献指南 后开 Issue 说明即可。
 
 ---
 
@@ -184,6 +184,15 @@ description: AI 黑话翻译器的完整概念树与编写进度。
 - ✅ [Planning 任务规划](./planning) -- Plan-and-Solve / ToT / LATS / Re-plan，先规划再执行
 - ✅ [Memory 记忆机制](./memory) -- 短期+长期+反思，MemGPT 式分层管理
 - ✅ [Multi-Agent 多智能体](./multi-agent) -- 角色分工协作，AutoGen/MetaGPT/CAMEL
+
+### 长上下文
+
+聚焦 LLM 处理超长序列的能力与局限。假设已读 [RAG](./rag) 和 [推理引擎](./inference-engine)。
+
+- ✅ [RoPE 旋转位置编码](./rope) -- 用旋转矩阵编码相对位置，LLaMA/Qwen/Mistral 的标准选择
+- ✅ [Ring Attention 环注意力](./ring-attention) -- 多 GPU 环形序列并行，百万 token 上下文不再遥不可及
+- ✅ [Lost in the Middle 中间迷失](./lost-in-the-middle) -- LLM 注意力 U 型曲线，中间的痛与缓解策略
+- ✅ [Long-context RAG](./long-context-rag) -- RAG + Long-context 混合范式，取二者之长
 
 ---
 

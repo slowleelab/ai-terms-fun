@@ -274,6 +274,16 @@ export default defineConfig({
               { text: '✅ Multi-Agent 多智能体', link: '/multi-agent' },
             ],
           },
+          {
+            text: '长上下文',
+            collapsed: false,
+            items: [
+              { text: '✅ RoPE 旋转位置编码', link: '/rope' },
+              { text: '✅ Ring Attention 环注意力', link: '/ring-attention' },
+              { text: '✅ Lost in the Middle 中间迷失', link: '/lost-in-the-middle' },
+              { text: '✅ Long-context RAG', link: '/long-context-rag' },
+            ],
+          },
         ],
       },
       {
